@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.apple.com/cn/retail/business/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	<meta charset="utf-8">
+	<meta name="Author" content="Apple Inc.">
+	<meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+	<link rel="stylesheet" href="./Apple Store 零售店 - 商务_files/globalheader.css" type="text/css">
+
+
+	<title>Apple Store 零售店 - 商务</title>
+	<meta name="omni_page" content="Retail Store - Business">
+	<meta name="Description" content="我们与那些希望扩展技术应用的企业主，以及公司内部为 Apple 产品提供支持的 IT 专业人士都有合作。">
+	<link rel="stylesheet" href="./Apple Store 零售店 - 商务_files/base.css" type="text/css">
+	<link rel="stylesheet" href="./Apple Store 零售店 - 商务_files/retail.css" type="text/css">
+	<link rel="stylesheet" href="./Apple Store 零售店 - 商务_files/retail(1).css" type="text/css">
+	<script src="./Apple Store 零售店 - 商务_files/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/sizzle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/ac_base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/feedstatistics.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/ac_retina.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="http://www.apple.com/wss/fonts?family=Myriad+Set+Pro&v=1&weights=200,400,600">
+<script src="./Apple Store 零售店 - 商务_files/event_mixins.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/swap_view.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/view_master_tracker.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/ac_autogallery.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/util.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/utility_nav.js" charset="utf-8"></script>
+<script src="./Apple Store 零售店 - 商务_files/specialty_dropdown_data.js" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/moreinfo.js" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/dropdown.js" charset="utf-8"></script>
+	<script src="./Apple Store 零售店 - 商务_files/store_selector.js" charset="utf-8"></script>
+	<script charset="utf-8">
+		Event.onDOMReady(function() {
+			var initStoreSelector = function(requestedCountryName) {
+				return (function(response) {
+					var responseDocument = response.responseXML.documentElement;
+					var countriesWithStores = responseDocument.getElementsByTagName('country');
+					var requestedCountry = null;
+
+					for(var i = 0; i < countriesWithStores.length; i++) {
+						var country = countriesWithStores[i];
+						if (country.getAttribute('name') == requestedCountryName) {
+							requestedCountry = country;
+							break;
+						}
+					}
+					new StoreSelector(requestedCountry, $('locationMenu'), $('storeMenu'), $('reserve'), 'business');
+				});
+			};
+
+			new Ajax.Request('/autopush/cn/retail/storelist/stores.xml', {
+				method: 'get',
+				onSuccess: initStoreSelector("China")
+			});
+		});
+	</script>
+<style>
+#business .hero .shop-button {
+    background-image: url("http://images.apple.com/cn/retail/business/images/shop_business_button.png");}
+    </style>
+</head>
+<body id="business" class="retail business">
+	<!--/globalheader-->
+
+<script src="./Apple Store 零售店 - 商务_files/globalheader.js" type="text/javascript" charset="utf-8"></script>
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+	
+	
+
+
+
+
+	
+
+
+<script type="text/javascript">
+/* RSID: */
+
+var s_account="applecnglobal,applecnretail"
+
+</script>
+
+
+	<script type="text/javascript" src="./Apple Store 零售店 - 商务_files/s_code_h.js"></script>
+
+
+
+<script type="text/javascript">
+
+s.pageName=AC.Tracking.pageName()+" (cn)";
+s.channel="www.cn.retailstore"
+
+
+//Map Tracking
+if (typeof Event !== 'undefined' && typeof $$ === 'function' && AC && AC.retail && typeof AC.retail.EventDispatch === 'function') {
+
+	AC.retail.EventDispatch().subscribeEvent("*", "::globalSearchReady", function() {
+		eventManager = AC.retail.EventDispatch();
+		var isDescendentOfTag = function isDescendentOfTag(node, tagType, maxParentDepthLevel) {
+				if (node && tagType && maxParentDepthLevel) {
+					if (node.tagName === tagType) {
+						return node;
+					} else if (maxParentDepthLevel) {
+						return isDescendentOfTag(node.parentNode, tagType, maxParentDepthLevel -= 1);
+					} else {
+						return false;
+					}
+				}
+			};
+		var searchInstances = AC.retail.AutoGlobalSearch().getGlobalSearchInstances();
+		var updateAnalytics = function(prop3Val, customName, eVar16Val, eventsVal) {
+				AC.Tracking.trackClick({
+					prop3: prop3Val,
+					eVar16: eVar16Val,
+					events: eventsVal
+				}, this, 'o', customName);
+			};
+		var locationGroupEventsAttached;
+		var trackLocatorNetworkUpdate = function(isDefaultLocation) {
+			if (!isDefaultLocation) {
+				updateAnalytics("Retail index - Find a store - Search", "retail search locator", "retail store search", "event6");
+			}
+				if (!locationGroupEventsAttached) {
+					eventManager.subscribeEvent($$(".listView")[0], "down", function(evt) {
+						if (AC.Element.hasClassName(evt.target, "more")) {
+							updateAnalytics("Find a store - List - View Store Details", "List - View Store Details");
+						}
+					});
+					eventManager.subscribeEvent($$(".mapView")[0], "down", function(evt) {
+						if (evt && evt.target) {
+							if (isDescendentOfTag(evt.target, "A", 5) && AC.Element.hasClassName(isDescendentOfTag(evt.target, "A", 5), "store-info")) {
+								updateAnalytics("Find a store - Map - View Store Details", "Map - View Store Details");
+							} else if (isDescendentOfTag(evt.target, "A", 5)) {
+								updateAnalytics("Find a store - Map - Learn more", "Map - Learn more");
+							}
+						}
+					});
+					locationGroupEventsAttached = true;
+				}
+			};
+
+		searchInstances.forEach(function(instanceOfGlobalSearch) {
+			if (instanceOfGlobalSearch.module && typeof instanceOfGlobalSearch.module.getModuleType === "function") {
+				if (instanceOfGlobalSearch.module.getModuleType() === "retail-locator") {
+					eventManager.subscribeEvent(instanceOfGlobalSearch.module, "::newNetworkLocationResults", trackLocatorNetworkUpdate);
+				}
+			}
+		});
+	});
+
+}
+
+
+
+s.linkInternalFilters="javascript:,apple.com/cn/"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+    
+
+
+	<div id="main" role="main" data-hires="true">
+
+		<div class="content">
+			<header class="hero">
+				<h1><img src="./Apple Store 零售店 - 商务_files/title.png" alt="商务选购的绝佳场所" width="980" height="50"></h1>
+				<p class="intro center">商务团队致力于协助你将想法变为现实。无论你是企业主、员工或是 IT 专业人士，我们都会耐心地了解你的业务，<span class="nowrap">带给你切实的建议与灵感来源</span>，并以世界级的水准为你提供支持。</p>
+					<a class="center shop-button" href="http://store.apple.com/cn-smb?target=smb" onclick="s_objectID=&quot;http://store.apple.com/cn-smb?target=smb_1&quot;;return this.s_oc?this.s_oc(e):true">到企业商店选购</a>
+				<img class="hero-image center" src="./Apple Store 零售店 - 商务_files/hero.jpg" alt="" width="780" height="476">
+			</header>
+
+			<div class="instore grid2col row">
+				<div class="visit column first">
+					<section class="solution">
+						<h1><img src="./Apple Store 零售店 - 商务_files/solution_title.png" width="490" height="34" alt="结识商务团队"></h1>
+						<p style="width:472px;">来零售店参加特别活动，你可在此与商务团队会面，并了解我们能如何帮助你和你的业务。安排一场 Briefing，进行更加个性化的讨论。你还可参加我们贯穿全年的其他活动，结交身边的业内专家，如 app 开发者、管理人员和企业主。</p>
+					</section><!--/solutions-->
+					<section class="products">
+						<h1><img src="./Apple Store 零售店 - 商务_files/products_title.png" width="490" height="34" alt="轻松快捷地购买 Apple 产品"></h1>
+						<p>我们的 Apple 产品备有库存，已为你准备就绪。同时，我们还可为你对产品配置进行定制，并将其直接运送至你需要的地方。<br><a class="more" href="http://store.apple.com/cn-smb?target=smb" onclick="s_objectID=&quot;http://store.apple.com/cn-smb?target=smb_2&quot;;return this.s_oc?this.s_oc(e):true">访问 Apple Store 企业商店</a></p>
+					</section><!--/products-->
+				</div>
+				<section class="contact column last">
+
+					<h1><img src="./Apple Store 零售店 - 商务_files/contact_title.png" width="240" height="34" alt="让我们与你联络"></h1>
+					<p>如果你想与商务团队进行交流，只需选择一家零售店并提供你的联系方式，我们将尽快联系你。</p>
+				<!--[if IE]>
+					<div class="ie-reserve-online">
+				<![endif]-->
+				<!--[if !IE]> -->
+					<div class="reserve-online">
+				<!-- <![endif]-->
+						<form action="http://www.apple.com/cn/retail/business/#" method="post" accept-charset="utf-8">
+							<fieldset>
+								<div class="storeselect select-style states">
+									<select name="storestate" id="locationMenu">
+										<option selected="selected" value="">Select a State</option>
+									<option value="China" selected="selected">China</option></select>
+								</div>
+								<div class="storeselect select-style">
+									<select name="storecity" id="storeMenu"><option value="">选择零售店</option><option name="R401" value="http://concierge.apple.com/biz/R401">上海, 上海环贸 iapm </option><option name="R359" value="http://concierge.apple.com/biz/R359">上海, 南京东路</option><option name="R389" value="http://concierge.apple.com/biz/R389">上海, 浦东</option><option name="R390" value="http://concierge.apple.com/biz/R390">上海, 香港广场</option><option name="R320" value="http://concierge.apple.com/biz/R320">北京, 三里屯</option><option name="R479" value="http://concierge.apple.com/biz/R479">北京, 华贸购物中心</option><option name="R448" value="http://concierge.apple.com/biz/R448">北京, 王府井</option><option name="R388" value="http://concierge.apple.com/biz/R388">北京, 西单大悦城</option><option name="R637" value="http://concierge.apple.com/biz/R637">天津, 天津大悦城</option><option name="R502" value="http://concierge.apple.com/biz/R502">成都, 成都万象城</option><option name="R574" value="http://concierge.apple.com/biz/R574">无锡, 无锡恒隆广场</option><option name="R532" value="http://concierge.apple.com/biz/R532">杭州, 杭州万象城</option><option name="R471" value="http://concierge.apple.com/biz/R471">杭州, 西湖</option><option name="R534" value="http://concierge.apple.com/biz/R534">沈阳, 中街大悦城</option><option name="R484" value="http://concierge.apple.com/biz/R484">深圳, 深圳益田假日广场</option><option name="R572" value="http://concierge.apple.com/biz/R572">郑州, 郑州万象城</option><option name="R480" value="http://concierge.apple.com/biz/R480">重庆, 解放碑</option><option name="R573" value="http://concierge.apple.com/biz/R573">重庆, 重庆万象城</option><option name="R476" value="http://concierge.apple.com/biz/R476">重庆, 重庆北城天街</option></select>
+								</div>
+							</fieldset>
+							<fieldset>
+								<div id="reserve" class="select-store"><input type="image" value="Reserve"></div>
+							</fieldset>
+						</form>
+					</div><!--/reso-->
+				</section><!--/contact-->
+			</div>
+
+			<section class="support row grid2col">
+				<img class="left" src="./Apple Store 零售店 - 商务_files/help.jpg" width="265" height="173" alt="">
+				<div class="column last">
+					<h1><img src="./Apple Store 零售店 - 商务_files/help_title.png" width="490" height="34" alt="在你需要时获得建议和帮助"></h1>
+					<p>当你对产品和服务持有疑问或需要建议时，仅需致电商务团队，我们将为你指明正确的方向。有关对 Apple 产品的实际操作技术支持，请在任意一家 Apple&nbsp;Store 零售店的 Genius Bar 天才吧进行免费预约。或参加我们的店内免费讲座，学习全新 Mac、iPad 和 iPhone 的操作技能。 <a href="http://www.apple.com/cn/retail/learn/" class="more" onclick="s_objectID=&quot;http://www.apple.com/cn/retail/learn/_1&quot;;return this.s_oc?this.s_oc(e):true">进一步了解讲座</a></p>
+				</div>
+			</section>
+
+			<section class="jointventure row border-top">
+				<h1><img src="./Apple Store 零售店 - 商务_files/joint_venture_title.png" width="780" height="63" alt="JointVenture"></h1>
+				<h2><img src="./Apple Store 零售店 - 商务_files/membership_title.png" width="780" height="34" alt="获取 Joint Venture 商务定制服务会员资格，令你的业务更上一层楼。"></h2>
+				<p>Joint Venture 商务定制服务项目可以提供用户定制的商务支持，并为你和员工提供培训。<a href="http://www.apple.com/cn/retail/business/jointventure/terms.html" class="more" onclick="s_objectID=&quot;http://www.apple.com/cn/retail/business/jointventure/terms.html_1&quot;;return this.s_oc?this.s_oc(e):true">条款与条件</a></p>
+
+				<div class="grid2col setup">
+					<div class="column first">
+						<h2><img src="./Apple Store 零售店 - 商务_files/setup_title.png" width="490" height="34" alt="为你设置妥当，令一切运行顺当。"></h2>
+						<p>首先，我们会确保所有全新系统已准备就绪。然后，我们将从你的 PC 或 Mac 传输现有数据，包括你的邮件、日历和通讯录。我们甚至还可以为你安装你从 Apple Store 零售店或 Apple Store 在线商店购买的任何其他软件。</p>
+					</div>
+					<img class="right" src="./Apple Store 零售店 - 商务_files/setup.jpg" width="265" height="173" alt="">
+				</div><!--/setup-->
+
+				<div class="grid2col training">
+					<img class="left" src="./Apple Store 零售店 - 商务_files/training.jpg" width="265" height="173" alt="">
+					<div class="column last">
+						<h2><img src="./Apple Store 零售店 - 商务_files/training_title.png" width="490" height="34" alt="为你的员工定制培训"></h2>
+						<p>一旦设置成功，你可以为定制化的实际操作培训课程安排各种各样的主题，例如 Mac 使用入门、iPhone 和 iPad 的商务应用、用 Keynote 创建引人入胜的演示文稿等。因此，无论你的员工只想温习基础知识，还是期待掌握全新技能，我们均可提供他们所需的一切。</p>
+					</div>
+				</div><!--/training-->
+
+				<div class="grid2col access">
+					<div class="column first">
+						<h2><img src="./Apple Store 零售店 - 商务_files/access_title.png" width="490" height="34" alt="Apple 支持服务的高级访问"></h2>
+						<p>你将拥有自己的网站，来帮你轻松访问我们提供的每一项服务：定制培训、Genius Bar 天才吧预约、技术支持及讲座等。同时，你可以通过电话与一位 Apple Genius 天才交谈，以帮助你解决问题，检查必要零件，以及估算维修处理所需时间。在你的电脑进行维修时，我们会借给你一台电脑暂用。如果你更喜欢亲自面谈，还可以在全球任何一家 Apple Store 零售店进行 Genius&nbsp;Bar 天才吧预约。</p>
+						<p>已经是 Joint Venture 商务定制服务会员？<a href="http://jointventure.apple.com/" target="_blank" class="more" onclick="s_objectID=&quot;http://jointventure.apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true">立即登录</a></p>
+					</div>
+					<img class="right" src="./Apple Store 零售店 - 商务_files/access.jpg" width="334" height="282" alt="">
+				</div><!--/access-->
+			</section><!--/jointventure-->
+		</div><!--content-->
+
+		
+
+		<div class="grid3col callout promo" data-hires="true">
+	<a class="column first" href="http://www.apple.com/cn/recycling/" onclick="s_objectID=&quot;http://www.apple.com/cn/recycling/_1&quot;;return this.s_oc?this.s_oc(e):true">
+		<h3><img src="./Apple Store 零售店 - 商务_files/promo_recycle_title.png" width="250" height="29" alt="循环利用与折价"></h3>
+		<p>我们会回收你的旧电子设备，如 iPhone、iPad、Mac 或 PC。<br><span class="more">了解更多</span><br><br></p>
+		<img class="image" src="./Apple Store 零售店 - 商务_files/promo_recycle.png" width="131" height="126" alt="">
+	</a>
+	<a class="column second" href="http://store.apple.com/cn/browse/home/campaigns/corporate_gifting" onclick="s_objectID=&quot;http://store.apple.com/cn/browse/home/campaigns/corporate_gifting_1&quot;;return this.s_oc?this.s_oc(e):true">
+		<h3><img src="./Apple Store 零售店 - 商务_files/promo_gift_title.png" width="250" height="29" alt="商务好礼"></h3>
+		<p>如果你将 iPad 和 iPod 作为公司礼品、激励奖品和升职奖励，你可以享受批量购买优惠价格。<br>
+		<span class="more">了解更多</span></p>
+		<img class="image" src="./Apple Store 零售店 - 商务_files/promo_gift.jpg" width="132" height="136" alt="">
+	</a>
+	<a class="column last" href="http://www.apple.com/cn/ipad/business/" onclick="s_objectID=&quot;http://www.apple.com/cn/ipad/business/_1&quot;;return this.s_oc?this.s_oc(e):true">
+		<h3><img src="./Apple Store 零售店 - 商务_files/promo_business_title.png" width="250" height="29" alt="Apple 商务应用"></h3>
+		<p>了解 Mac、iPad 和 iPhone 解决方案如何与你的业务相整合，并发现它们在其他行业里的应用。
+		<span class="more">了解更多</span><br><br></p>
+		<img class="image" src="./Apple Store 零售店 - 商务_files/promo_business.jpg" width="258" height="108" alt="">
+	</a>
+</div>
+
+	</div><!--/main-->
+
+	
+
+
+
+<a></a><a></a><a></a></body><div></div></html>

@@ -1,0 +1,53 @@
+body {
+	background-image: url(http://admin.doctor.chxj.name/public/image/bg.png);
+}
+#header {
+	height: 277px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	background-image: url(http://blog.chxj.name/content/images/2013/Dec/doctype_hi_res_lower_1-3.jpg);
+}
+#cover {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+#logo {
+	position: relative;
+	height: 100px;
+	margin: 100px 0 30px 0;
+}
+#title {
+	border-bottom: solid 1px #cacaca;
+	font-style: italic;
+	margin: 20px auto;
+	padding: 20px 0;
+	text-align: center;
+	width: 80%;
+}
+.row {
+	font-size: 18px;
+	color: gray;
+	padding: 10px;
+	text-align: center;
+}
+#search-input {
+	text-align: right;
+	margin-right: 10%;
+}
+#search-input>input[type="text"] {
+	border-radius: 4px;
+	padding: 6px 12px;
+	opacity: 0.5;
+}
+#search-input>input[type="button"] {
+	border-radius: 4px;
+	text-align: center;
+	padding: 6px 12px;
+	font-size: 14px;
+	background-color: #286090;
+	color: #fff;
+}

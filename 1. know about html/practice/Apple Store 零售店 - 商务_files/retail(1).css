@@ -1,0 +1,126 @@
+/* globalheader adjustment */
+body { padding-top:0; }
+#globalheader { margin-bottom:0; }
+
+
+/* Promos
+------------------------*/
+.retail .promos.grid3col .column { height:355px; }
+
+@media only screen and (max-device-width:768px) {
+	.retail .promos.grid3col .column { height:380px; }
+}
+
+/* Page specific
+------------------------*/
+
+/* business */
+#business #main form .select-store { background-image: url("http://images.apple.com/cn/retail/business/images/button_next.png"); }
+#business .hero .businessstores { background: url("http://images.apple.com/cn/retail/business/images/shop_business_store.png") no-repeat scroll center top rgba(0, 0, 0, 0); height: 48px; margin-bottom: 70px; width: 238px; }
+
+/* youth */
+.retail header nav.buttons .youth h3 { background-image:url(http://images.apple.com/cn/retail/learn/images/retail_learn_header_youth_icon.png); _behavior:url(/global/scripts/lib/ie7pngfix.htc); }
+.youth .content section.apple-camp { margin-bottom:39px; }
+.youth .content section.field-trip { margin-bottom:45px; }
+
+/* workshops */
+.retail header nav.buttons .workshops h3 { background-image:url(http://images.apple.com/cn/retail/learn/images/retail_learn_header_worskhop_icon.png); _behavior:url(/global/scripts/lib/ie7pngfix.htc); }
+.workshops .offers li#mac {
+    background-position: 95px 50%;
+}
+.workshops .offers li#iphone,.workshops .offers li#ipad {
+    background-position: 107px 50%;
+}
+.workshops .offers li#watch-basics { background-image:url(http://images.apple.com/cn/retail/learn/images/watch_basics.png); }
+.workshops .offers li#mac { background-image:url(http://images.apple.com/cn/retail/learn/images/mac.png); }
+.workshops .offers ul li#mac { margin-top: 0px;}
+.workshops .offers li#mac { background-image:url(http://images.apple.com/cn/retail/learn/images/mac.png); }
+.workshops .offers li#mac-basics { background-image:url(http://images.apple.com/cn/retail/learn/images/mac_basics.png); }
+.workshops .offers li#mac-personalize { background-image:url(http://images.apple.com/cn/retail/learn/images/mac_personalize.png); }
+.workshops .offers li#iphone { background-image:url(http://images.apple.com/cn/retail/learn/images/iphone.png); }
+.workshops .offers li#ipad { background-image:url(http://images.apple.com/cn/retail/learn/images/ipad.png); }
+.workshops .offers li#ios-basics { background-image:url(http://images.apple.com/cn/retail/learn/images/ios_basics.png); }
+.workshops .offers li#ios-personalize { background-image:url(http://images.apple.com/cn/retail/learn/images/ios_personalize.png); }
+.workshops .offers li#stay-connected { background-image:url(http://images.apple.com/cn/retail/learn/images/stay_connected.png); }
+.workshops .offers li#icloud { background-image:url(http://images.apple.com/cn/retail/learn/images/icloud.png); }
+.workshops .offers li#photography { background-image:url(http://images.apple.com/cn/retail/learn/images/photography.png); }
+.workshops .offers li#iphoto-ios { background-image:url(http://images.apple.com/cn/retail/learn/images/iphoto_ios.png); }
+.workshops .offers li#iphoto-mac { background-image:url(http://images.apple.com/cn/retail/learn/images/iphoto_mac.png); }
+.workshops .offers li#imovie-ios { background-image:url(http://images.apple.com/cn/retail/learn/images/imovie_ios.png); }
+.workshops .offers li#imovie-mac { background-image:url(http://images.apple.com/cn/retail/learn/images/imovie_mac.png); }
+.workshops .offers li#continuity { background-image:url(http://images.apple.com/cn/retail/learn/images/continuity.png); }
+.workshops .offers li#photography { background-image:url(http://images.apple.com/cn/retail/learn/images/photography.png); }
+
+.workshops header p.intro,
+.youth header p.intro,
+.onetoone header p.intro { width:800px; }
+.workshops .offers p { width:775px; padding:0 100px; }
+
+/* onetoone */
+.retail header nav.buttons .onetoone h3 { background-image:url(http://images.apple.com/cn/retail/learn/images/retail_learn_header_onetoone_icon.png); _behavior:url(/global/scripts/lib/ie7pngfix.htc); }
+.onetoone .learn .first { background-image:url(http://images.apple.com/cn/retail/learn/one-to-one/images/personal_logo.jpg); }
+.onetoone .learn .middle { background-image:url(http://images.apple.com/cn/retail/learn/one-to-one/images/group_logo.jpg); }
+.onetoone .learn .last { background-image:url(http://images.apple.com/cn/retail/learn/one-to-one/images/training_logo.jpg); }
+
+@media only screen {
+	.onetoone .learn .first { background-image:url(/cn/retail/learn/one-to-one/images/personal_logo.svg); }
+	.onetoone .learn .middle { background-image:url(/cn/retail/learn/one-to-one/images/group_logo.svg); }
+	.onetoone .learn .last { background-image:url(/cn/retail/learn/one-to-one/images/training_logo.svg); }
+}
+
+/* Personal setup */
+.setup #main #hero { background-image:url(http://images.apple.com/cn/retail/personalsetup/images/hero.png); }
+.setup.appt #main #reso form #reserve {  background:url(http://images.apple.com/cn/retail/personalsetup/gift/images/button_next.png); }
+.setup.appt #main #reso form .next { background-image: url(http://images.apple.com/cn/retail/personalsetup/gift/images/button_next.png); background-position: 0 100%; background-repeat: no-repeat; cursor: pointer; height: 36px; padding: 2px 0 6px; width: 74px; }
+.setup.appt #main #reso form .next.active { background-image: url(http://images.apple.com/cn/retail/personalsetup/gift/images/button_next_active.png); }
+
+/* store detail */
+.store-page .nav.hero-nav a.retail-store-app p { background-image:url(http://images.apple.com/cn/retail/images/retail_store_app_icon_green.png); }
+
+span.learn-more { color:#08c; white-space:normal; text-align:left; display:inline-block; }
+span.more { padding-right:10px; display:inline-block; text-align:left; margin-right:5px; }
+
+/* Retail Footer*/
+.find-store label { position: relative; top: 3px;}
+.find-store .select { -moz-user-select: none; cursor: pointer; float: right; height: 29px; max-width: 270px; min-width: 188px; padding: 0; position: relative; right: 150px; top: -2px; width: auto; z-index: 3; }
+.find-store .select .selection, .retail-locator-search .select .selection { background-color: #FFFFFF; }
+.find-store .storelist  { float: right; margin-left: 180px; position: relative; right: -200px; top: -15px; }
+#globalfooter .gf-wrapper ul.piped a { border-color: #D1D1D1; padding-left: 13px; }
+
+/* iPhone, iPad, Mac page select drop down menu*/
+.productselect { float: none; min-width: 200px; max-width: 270px; margin-left:20px; margin-top:-2px; *left:200px;*width:150px;*position:absolute; }
+#ts_sel .select{position:absolute; top:-1px; left:107%;}
+#ts_sel .select .selection,#ts_sel .select .arrow,#ts_sel .select .menu{font-size:12px;}
+
+/* Field Trip Button*/
+.fieldtrip #main #content .submit { background-image: url(http://images.apple.com/cn/retail/fieldtrip/images/retail_fieldtrips_signup_off.png); }
+.fieldtrip #main #content .submit.active { background-image: url(http://images.apple.com/cn/retail/fieldtrip/images/retail_fieldtrips_signup.png); }
+
+/* States Drop Down Menu */
+form .states { display: none; }
+
+/* Retail Learn Drop Down Menu */
+#workshops .retail-locator-search .store-list a.more { margin: 6px 0 0 -88px;}
+#workshops .retail-locator-search .select { margin: 5px 0 0 6px;}
+#workshops .retail-locator-search { padding-bottom: 53px; padding-left: 69px; }
+#workshops .retail-locator-search .store-list a.more {*margin-left:-50px;}
+
+/* IE8 Retail global footer*/
+.find-store .select { *top: -20px;*right: 170px; }
+.find-store .storelist {float: right; position: relative; *right: -210px;  }
+#globalfooter .find-store .column.first label { position: relative; *top:3px; }
+#globalfooter .find-store .column {  *width: 200px;}
+#globalfooter .find-store .grid3col .column.last { *float: left !important;*padding-left:20px; }
+.find-store .grid3col .column.first a { *margin-top:-12px; }
+#globalfooter .find-store .column.first { *padding: 0 10px 0 55px;*width: 505px;}
+
+/* IE8 Retail iphone what-to-bring*/
+#iphone #main .what-to-bring .grid3col .column.three {*width: 283px;*padding-right:0;}
+
+
+/*IE8 Retail for globalfooter*/
+#globalfooter{-webkit-text-size-adjust:none; font-size:10px;}
+#globalfooter .find-store .column{*width: 260px;}
+#globalfooter .find-store .column.last{*width: 57px;}
+
+#globalfooter .find-store .grid3col{font-size:10px;-webkit-text-size-adjust:none;}
