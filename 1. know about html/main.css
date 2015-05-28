@@ -1,12 +1,12 @@
 body {
-	background-image: url(http://admin.doctor.chxj.name/public/image/bg.png);
+	background-image: url(bg.png);
 }
 #header {
 	height: 277px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
-	background-image: url(http://blog.chxj.name/content/images/2013/Dec/doctype_hi_res_lower_1-3.jpg);
+	background-image: url(cover.jpg);
 }
 #cover {
 	position: absolute;
